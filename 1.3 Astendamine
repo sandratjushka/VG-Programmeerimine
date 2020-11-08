@@ -1,0 +1,4 @@
+astme_alus = input("Sisestage astme alus: ")
+astendaja = input("Sisestage astendaja: ")
+vastus = pow(int(astme_alus), int(astendaja))
+print(vastus)
