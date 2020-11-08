@@ -1,0 +1,6 @@
+number = int(input("Sisestage mitu korda äratada: "))
+sonum = "Tõuse ja sära!"
+kordus = 1
+while kordus <= int(number):
+    print(sonum)
+    kordus= kordus + 1
