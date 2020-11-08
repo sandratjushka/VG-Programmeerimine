@@ -1,0 +1,10 @@
+def tervitus(kordus):
+    print('Võõrustaja: "Tere!"')
+    print('Täna ' + str(kordus) + '. kord tervitada, mõtiskleb võõrustaja.')
+    print('Külaline: "Tere, suur tänu kutse eest!"')
+
+arv = int(input("arv?"))
+kordus = 1
+while kordus<= arv:
+    tervitus(kordus)
+    kordus+= 1
