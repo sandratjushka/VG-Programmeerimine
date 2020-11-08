@@ -1,0 +1,6 @@
+minutite_arv = int(input("Sisestage minutite arv: "))
+laikide_arv = 0
+for i in range(1, minutite_arv+1):
+    if i%2 == 1:
+        laikide_arv += i
+print("Laikide koguarv on " + str(laikide_arv) + ".")
