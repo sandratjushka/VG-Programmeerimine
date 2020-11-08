@@ -1,0 +1,7 @@
+from datetime import *
+
+fail = open(input("Sisestage failinimi: "))
+nimekiri = []
+for rida in fail:
+    nimekiri.append(rida)
+print(nimekiri[datetime.now().day - 1])
