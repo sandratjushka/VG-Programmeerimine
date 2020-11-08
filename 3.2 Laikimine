@@ -1,0 +1,7 @@
+minutite_arv = int(input("Sisestage minutite arv: "))
+laikide_arv = 0
+while (minutite_arv>0):
+    if minutite_arv%2 == 1:
+        laikide_arv += minutite_arv
+    minutite_arv -= 1
+print("laikide koguarv on " + str(laikide_arv) + ".")
