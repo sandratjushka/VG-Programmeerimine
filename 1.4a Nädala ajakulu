@@ -1,0 +1,4 @@
+ainepunktide_arv = int(input("Sisestage ainepunktide arv: "))
+nadalate_arv = int(input("Sisestage nädalate arv: "))
+vastus = ainepunktide_arv*26/nadalate_arv
+print(round(vastus))
