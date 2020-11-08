@@ -1,0 +1,9 @@
+nimi = input("Sisestage oma nimi: ")
+lubatud_kiirus = int(input("Sisestage lubatud kiirus (km/h) :"))
+tegelik_kiirus = int(input("Sisestage tegelik kiirus (km/h) : "))
+vastus = 3*int(tegelik_kiirus - lubatud_kiirus)
+if vastus<=190 :
+    vastus = vastus
+else:
+    vastus = 190
+print(str(nimi) + ", teie trahv kiiruse ületamise eest on " + str(vastus) + " eurot.")
