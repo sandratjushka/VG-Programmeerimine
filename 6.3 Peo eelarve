@@ -1,0 +1,12 @@
+inimeste_arv = int(input("Mitu inimest on kutsutud? "))
+tulijate_arv = int(input("Mitu inimest tuleb? "))
+def eelarve(inimeste_arv):
+    max_eelarve = 55 + inimeste_arv*10
+    return max_eelarve
+a = eelarve(inimeste_arv)
+print("Maksimaalne eelarve: " + str(a))
+def eelarve2(tulijate_arv):
+    min_eelarve = 55 + tulijate_arv*10
+    return min_eelarve
+b = eelarve2(tulijate_arv)
+print("Minimaalne eelarve: " + str(b))
