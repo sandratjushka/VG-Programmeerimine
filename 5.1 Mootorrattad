@@ -1,0 +1,7 @@
+fail = open("mootorrattad.txt")
+mootorrattad = []
+for rida in fail:
+    mootorrattad.append(int(rida))
+kuu = int(input("Palun sisestage mitmes kuu: "))
+print(mootorrattad[kuu-1])
+fail.close()
