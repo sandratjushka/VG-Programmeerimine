@@ -1,0 +1,13 @@
+from easygui import *
+import operator
+nr1 = integerbox("Sisestage esimene täisarv lõigus 1-10:", lowerbound = 1, upperbound = 10)
+nr2 = integerbox("Sisestage teine täisarv lõigus 1-10:", lowerbound = 1, upperbound = 10)
+nupud = ["+", "-", "*"]
+tehe = buttonbox("Valige tehe:", choices = nupud)
+if tehe=="+":
+    vastus = (nr1 + nr2)
+elif tehe=="-":
+    vastus = (nr1 - nr2)
+elif tehe=="*":
+    vastus = (nr1 * nr2)
+msgbox = ("Tehte tulemus on " + vastus + ".")
