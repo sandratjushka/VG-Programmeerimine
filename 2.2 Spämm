@@ -1,0 +1,9 @@
+kirja_suurus_megabaitides = float(input(" Sisestastage kirja suurus: "))
+kirja_teema_pealkiri = input("Sisestage kirja teema pealkiri: ")
+fail = input("Kas kirjaga on kaasas fail?")
+if kirja_suurus_megabaitides > 1 and (fail=="jah"):
+    print("Kiri on spämm")
+elif len(kirja_teema_pealkiri)==0:
+    print("Kiri on spämm")
+else:
+    print("Kiri ei ole spämm")
