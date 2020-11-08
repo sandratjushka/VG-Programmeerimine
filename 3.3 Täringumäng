@@ -1,0 +1,7 @@
+from random import randint
+
+taringute_arv = int(input("Täringute arv: "))
+kordus = 0
+while kordus < taringute_arv :
+    print(randint(1,6))
+    kordus += 1
