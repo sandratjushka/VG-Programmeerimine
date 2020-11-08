@@ -1,0 +1,10 @@
+number = int(input("Mitu korda soovite reklaamlauset  kuvada? "))
+lause = input("Sisestage reklaamlause: ")
+kordus = 0
+def banner(lause):
+   lause = lause.upper()
+   return lause
+vastus = banner(lause)
+while kordus < number:
+        print(vastus)
+        kordus+= 1
