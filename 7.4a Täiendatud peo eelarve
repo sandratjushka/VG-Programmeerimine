@@ -1,0 +1,28 @@
+def loefail():
+    failinimi = input("Sisestage failinimi: ")
+    return open(failinimi, encoding="UTF-8")
+
+
+def kulalised(f):
+    koik = 0
+    tuleb = 0
+    for rida in f:
+        koik += 1
+        if(rida.startswith("?")):
+            continue
+        tuleb += 1
+    aa = eelarve(koik)
+    bb = eelarve(tuleb)
+    print("Kutsutud on " + str(koik) + " inimest")
+    print(str(tuleb) + " inimest tuleb")
+    print("Maksimaalne eelarve: " + str(aa) + " EUR")
+    print("Minimaalne eelarve: " + str(bb) + " EUR")
+
+def eelarve(n):
+    return 55 + n*10
+
+def main():
+    kulalised(loefail())
+
+if __name__=="__main__":
+    main()
