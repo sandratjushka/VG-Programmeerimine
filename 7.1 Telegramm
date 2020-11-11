@@ -1,0 +1,20 @@
+failinimi = str(input("Sisestage failinimi: "))
+fail = open(failinimi, encoding="UTF-8")
+for rida in fail:
+    rida = rida.upper()
+    s = ""
+    for c in rida:
+        if c=="Õ":
+            s+="OE"
+            continue
+        if c=="Ä":
+            s+="AE"
+            continue
+        if c=="Ü":
+            s+="UE"
+            continue
+        if c=="Ö":
+            s+="OE"
+            continue
+        s+=c
+    print(s, end = "")
